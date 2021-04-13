@@ -29,7 +29,7 @@ def gatherInfo():
 	path2=os.getcwd()
 	path2=path2+"/Segments/"
 	mainFile=open(path1,'w')
-	lisDir=os.listdir(os.path.join(os.getcwd()+"\Segments"))
+	lisDir=os.listdir(os.path.join(os.getcwd()+"/Segments"))
 	for i in lisDir:
 		f=open(path2+i,'r')
 		content=f.read()
@@ -70,7 +70,7 @@ def trim():
 def Merge():
 	mainFile=open("Output.txt","w")
 	for i in range(0,5):
-		name=os.path.join(os.getcwd()+"\Segments",str(i)+".txt")
+		name=os.path.join(os.getcwd()+"/Segments",str(i)+".txt")
 		f=open(name,"r")
 		cont=f.read()
 		print('From Encrypted file - ',i,'->',cont)
